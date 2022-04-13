@@ -16,7 +16,7 @@ function login(){
         document.getElementById('output').innerHTML = "";
         if (email == '@admin'){
             if (passwd == 'admin'){
-                open('/chat');
+                open('chat');
             }else{
                 document.getElementById('output').innerHTML = "Email atau kata sandi salah";
             }
