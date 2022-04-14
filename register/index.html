@@ -9,6 +9,13 @@
 
     <!-- Title -->
     <title>RIV.CHAT - Register</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -58,6 +65,7 @@
                  <!-- More Action -->
                  <div class="text-center text-lg-start mt-4 pt-2">
                      <p class="text-danger" id="output"></p>
+                     <p class="text-success" id="output1"></p>
                    <button onclick="reg()" type="button" class="btn btn-primary btn-lg"
                      style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
                  </div>
