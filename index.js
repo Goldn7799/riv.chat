@@ -14,8 +14,9 @@ var firebaseConfig = {
     const database = firebase.database()
 
     if (localStorage.getItem('login') != null){
-        open('chat');
         close();
+        open('chat');
+
     };
 
 function login(){
@@ -58,8 +59,9 @@ function login(){
           localStorage.setItem('login', '1');
     };
       alert('User Logged In!!')
-      open('chat')
-      close();
+      close()
+      open('chat');
+      
 
     })
     .catch(function(error) {
