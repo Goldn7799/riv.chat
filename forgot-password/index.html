@@ -7,8 +7,8 @@
     <!-- Import Botstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Title -->
-    <title>RIV.CHAT - Register</title>
+    <!-- title -->
+    <title>riv.chat - Forgot Password</title>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
@@ -28,48 +28,31 @@
         </div>
     </nav>
 
-    <!-- Register -->
+    <!-- Login -->
     <section class="m-5 vh-100">
         <div class="container-fluid h-custom">
            <div class="row d-flex justify-content-center align-items-center h-100">
              <div class="col-md-9 col-lg-6 col-xl-5">
-               <img class="d-none d-md-block " width="600" height="500" src="../src/undraw_New_entries_re_cffr.png"
+               <img class="d-none d-md-block" width="600" height="500" src="../src/undraw_Forgot_password_re_hxwm.png"
                  class="img-fluid" alt="Sample image">
              </div>
              <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                 <h1 class="text-primary">REGISTER</h1>
+                 <h1 class="text-primary">Reset Password</h1>
                <form>
-                   <!-- Username -->
-                 <div class="form-outline mb-3">
-                    <label class="form-label" for="user.name">Username</label>
-                    <input type="username" id="user.name" placeholder="Masukkan Username" class="form-control form-control-lg"/>
-                  </div>
                  <!-- Email input -->
                  <div class="form-outline mb-4">
                    <label class="form-label" for="user.email">Email address</label>
-                   <input type="email" id="user.email" placeholder="Masukkan Email Yang Valid" class="form-control form-control-lg"/>
+                   <input type="email" id="user.email" placeholder="Masukkan Email Yang Valid" class="form-control form-control-lg"
+                     placeholder="Enter a valid email address" />
                  </div>
-       
-                 <!-- Password input -->
-                 <div class="form-outline mb-3">
-                   <label class="form-label" for="user.password">Password</label>
-                   <input type="password" id="user.passwd" placeholder="Masukan Password" class="form-control form-control-lg"/>
-                 </div>
-
-                 <!-- Password Repeat -->
-                 <div class="form-outline mb-3">
-                    <label class="form-label" for="user.confirm">Password Repeat</label>
-                    <input type="password" id="user.confirm" placeholder="Masukan Password Ulang" class="form-control form-control-lg"/>
-                  </div>
        
                  <!-- More Action -->
                  <div class="text-center text-lg-start mt-4 pt-2">
                      <p class="text-danger" id="output"></p>
-                     <p class="text-success" id="output1"></p>
-                   <button onclick="reg()" type="button" class="btn btn-primary btn-lg"
-                     style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
-                     <p class="small fw-bold mt-2 pt-1 mb-0">Sudah Punya Akun? <a href=".."
-                      class="link-secondary">Login</a></p>
+                   <button type="button" onclick="rst()" class="btn btn-primary btn-lg"
+                     style="padding-left: 2.5rem; padding-right: 2.5rem;">Send Email</button>
+                   <p class="small fw-bold mt-2 pt-1 mb-0">Sudah Tau Password Nya? <a href=".."
+                       class="link-secondary">Login</a></p>
                  </div>
        
                </form>
@@ -77,11 +60,7 @@
            </div>
          </div>
        </section>
-
-    <!-- Import Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- Import JavaScript -->
-    <script src="index.js"></script>
-
+       
+       <script src="index.js"></script>
 </body>
 </html>
