@@ -58,7 +58,6 @@ function login(){
           localStorage.setItem('login', '1');
     };
       alert('User Logged In!!')
-      close()
       open('chat');
       
 
