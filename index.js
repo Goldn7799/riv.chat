@@ -14,7 +14,6 @@ var firebaseConfig = {
     const database = firebase.database()
 
     if (localStorage.getItem('login') != null){
-        close();
         open('chat');
 
     };
