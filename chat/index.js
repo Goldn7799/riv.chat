@@ -13,6 +13,14 @@ var firebaseConfig = {
     const auth = firebase.auth()
     const database = firebase.database()
 
+    if (localStorage.getItem('username') == 'KONTOL MEMEK'){
+        close()
+        close()
+        close()
+        open('../banned.html');
+        localStorage.clear();
+        };
+
 function lot() {
     localStorage.clear()
     open('..')

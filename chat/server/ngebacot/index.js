@@ -244,7 +244,7 @@ window.onload = function() {
       // Get name. Gets the username from localStorage
       get_name(){
         // Get the name from localstorage
-        if (localStorage.getItem('username') == 'KONTOL MEMEK PU'){
+        if (localStorage.getItem('username') == 'KONTOL MEMEK'){
           close()
           close()
           close()
