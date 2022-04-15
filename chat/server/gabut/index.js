@@ -242,6 +242,13 @@ window.onload = function() {
       // Get name. Gets the username from localStorage
       get_name(){
         // Get the name from localstorage
+        if (localStorage.getItem('username') == 'KONTOL MEMEK PU'){
+          close()
+          close()
+          close()
+          open('../banned.html');
+          localStorage.clear();
+        };
         if(localStorage.getItem('username') != null){
           return localStorage.getItem('username')
         }else{
