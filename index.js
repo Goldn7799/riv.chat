@@ -13,7 +13,7 @@ var firebaseConfig = {
     const auth = firebase.auth()
     const database = firebase.database()
 
-    if (localStorage.getItem('login') != null){
+    if (localStorage.getItem('login1') != null){
         open('chat');
         let time;
         function wt() {
@@ -71,7 +71,7 @@ function login(){
       const cb = document.querySelector('#rm');
       cbf = cb.checked;
       if (cbf == true) {
-          localStorage.setItem('login', '1');
+          localStorage.setItem('login1', '1');
     };
       alert('User Logged In!!')
       open('chat');
