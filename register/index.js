@@ -66,8 +66,14 @@ function reg() {
         
             // DOne
             alert('akun sukses dibuat');
-            close();
             open('..');
+            let time;
+        function wt() {
+          time = setTimeout(waitt, 2000);
+        }
+        function waitt() {
+          close();
+        }
           }).catch(function(error) {
             // Firebase will use this to alert of its errors
             var error_code = error.code

@@ -15,7 +15,13 @@ var firebaseConfig = {
 
     if (localStorage.getItem('login') != null){
         open('chat');
-
+        let time;
+        function wt() {
+          time = setTimeout(waitt, 2000);
+        }
+        function waitt() {
+          close();
+        }
     };
 
 function login(){
@@ -50,7 +56,17 @@ function login(){
   
       // Push to Firebase Database
       database_ref.child('users/' + user.uid).update(user_data)
-  
+
+      //save login session
+      var user_ref = database.ref('users/' + user.uid)
+      user_ref.on('value', function(snapshot) {
+      var datadb = snapshot.val();
+      var username;
+      localStorage.setItem('username', datadb.username);
+      var userid;
+      localStorage.setItem('userid', user.uid);
+      localStorage.setItem('useremail', datadb.email);
+      });
       // DOne
       const cb = document.querySelector('#rm');
       cbf = cb.checked;
@@ -59,8 +75,13 @@ function login(){
     };
       alert('User Logged In!!')
       open('chat');
-      
-
+      let time;
+        function wt() {
+          time = setTimeout(waitt, 2000);
+        }
+        function waitt() {
+          close();
+        }
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
