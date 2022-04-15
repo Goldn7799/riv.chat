@@ -12,6 +12,15 @@ var firebaseConfig = {
   // Initialize variables
     const auth = firebase.auth()
 
+    //banned user
+    if (localStorage.getItem('username') == 'KONTOL MEMEK'){
+        close()
+        close()
+        close()
+        open('../banned.html');
+        localStorage.clear();
+      };
+
 if (email == null){
     alert('Email Kosong')
 };
